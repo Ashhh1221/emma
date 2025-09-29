@@ -170,7 +170,7 @@ body {
 /* LETTERS SECTION */
 .letters-wrapper {
     position: relative;
-    max-width: 900px;   /* keeps paper size manageable */
+    max-width: 900px;
     margin: 20px auto;
 }
 
@@ -182,40 +182,43 @@ body {
 
 .letters-text {
     position: absolute;
-    top: 12%;             /* slightly closer for mobile */
-    left: 10%;            /* give breathing space */
+    top: 12%;
+    left: 10%;
     right: 10%;
-    color: #222;          /* ink-like text */
-    font-family: 'Courier New', monospace; /* retro typewriter feel */
+    bottom: 10%;             /* ensures it doesn’t overflow out */
+    color: #222;
+    font-family: 'Courier New', monospace;
     text-align: left;
-    word-wrap: break-word;   /* prevent overflow */
-    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-y: auto;         /* 📜 scroll inside the paper */
+    padding-right: 5px;       /* space for scrollbar */
 }
 
 .letters-text h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .letters-text p {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* 📱 Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .letters-text {
         top: 8%;
         left: 8%;
         right: 8%;
+        bottom: 8%;
     }
     .letters-text h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
     .letters-text p {
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 13px;
+        line-height: 1.5;
     }
 }
 
@@ -224,15 +227,17 @@ body {
         top: 5%;
         left: 6%;
         right: 6%;
+        bottom: 6%;
     }
     .letters-text h2 {
         font-size: 18px;
     }
     .letters-text p {
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 }
+
 
 /* Container */
 /* Container */
