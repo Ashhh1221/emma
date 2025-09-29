@@ -182,12 +182,14 @@ body {
 
 .letters-text {
     position: absolute;
-    top: 15%;           /* move text down */
-    left: 12%;          /* move text from left */
-    right: 12%;         /* keep some margin */
-    color: #222;        /* ink-like text */
+    top: 12%;             /* slightly closer for mobile */
+    left: 10%;            /* give breathing space */
+    right: 10%;
+    color: #222;          /* ink-like text */
     font-family: 'Courier New', monospace; /* retro typewriter feel */
     text-align: left;
+    word-wrap: break-word;   /* prevent overflow */
+    overflow-wrap: break-word;
 }
 
 .letters-text h2 {
@@ -199,6 +201,37 @@ body {
 .letters-text p {
     font-size: 16px;
     line-height: 1.8;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+    .letters-text {
+        top: 8%;
+        left: 8%;
+        right: 8%;
+    }
+    .letters-text h2 {
+        font-size: 22px;
+    }
+    .letters-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .letters-text {
+        top: 5%;
+        left: 6%;
+        right: 6%;
+    }
+    .letters-text h2 {
+        font-size: 18px;
+    }
+    .letters-text p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
 }
 
 /* Container */
