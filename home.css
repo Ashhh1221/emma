@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+/* HEADER CONTAINER */
+.header {
+    position: sticky;   /* makes it stick */
+    top: 0;             /* stick to very top */
+    width: 100%;
+    background: #fff;   /* white background so content doesn’t show through */
+    z-index: 1000;      /* keeps header above other elements */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* subtle divider line */
+}
+
+/* LEFT SMALL TEXT */
+.from {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* BIG RETRO TITLE */
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* NAV MENU */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 40px;
+    flex-wrap: wrap; /* helps with stacking on smaller screens */
+    background-color: #f8f8f8;
+}
+
+/* LEFT TEXT */
+.hero-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------ */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column; /* stack vertically */
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 42px; /* smaller headline */
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 32px; /* even smaller on mobile */
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+}
+
+
+/* LETTERS SECTION */
+.letters-wrapper {
+    position: relative;
+    max-width: 900px;   /* keeps paper size manageable */
+    margin: 20px auto;
+}
+
+.letters-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.letters-text {
+    position: absolute;
+    top: 15%;           /* move text down */
+    left: 12%;          /* move text from left */
+    right: 12%;         /* keep some margin */
+    color: #222;        /* ink-like text */
+    font-family: 'Courier New', monospace; /* retro typewriter feel */
+    text-align: left;
+}
+
+.letters-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.letters-text p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Container */
+/* Container */
+.collection-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Heading */
+.collection-container h2 {
+    color: #213555;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+/* Responsive: 2 images per row on tablets */
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: 1 image per row on mobile */
+@media (max-width: 500px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Gallery Images */
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* makes all images square */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Section Container */
+.video-section {
+    width: 100%;
+    max-width: 500px; /* Centered and narrower for vertical format */
+    margin: 0 auto;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Courier New', Courier, monospace; /* Retro typography */
+    text-align: center;
+}
+
+/* Title */
+.video-section h2 {
+    color: #213555;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Video Wrapper - 9:16 aspect ratio */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%; /* 16:9 = 56.25%, so 9:16 = 177.78% */
+    background-color: #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Hover Effect */
+.video-wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Letter Section */
+.letters-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.letters-section h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.letters-section .subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+.tag.love { background: #ff9aa2; }
+.tag.health { background: #b5ead7; }
+.tag.career { background: #c7ceea; }
+.tag.you { background: #ffdac1; }
+.tag.all { background: #d3d3d3; }
+.tag.thanks { background: #CBDCEB; }
+
+.letters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.letter {
+  text-align: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.letter-tags {
+  margin-top: 10px;
+}
+
+.letter-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.letter-tag.love { background: #ff9aa2; }
+.letter-tag.health { background: #b5ead7; color: #000; }
+.letter-tag.career { background: #c7ceea; }
+.letter-tag.you { background: #ffdac1; color: #000; }
+.letter-tag.thanks { background: #CBDCEB; color: #000; }

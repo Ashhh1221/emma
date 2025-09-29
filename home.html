@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header" id="mainHeader">
+        <div class="from">
+            FROM J
+        </div>
+        <div class="title">
+            FOR LOVE
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#hero">Intro</a></li>
+                <li><a href="#letters">Letter</a></li>
+                <li><a href="#video">A video</a></li>
+                <li><a href="#byj">By J.</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Hi Mama LinLatt</h1>
+            <p>
+             I want to tell you much of words that I can't express in person.
+             So I made this website to share my feelings and thoughts to you. <br>
+                Hope you like it.
+            </p>
+            <a href="#letters" class="btn">Explore</a>
+        </div>
+        <div class="hero-image">
+            <img src="hero 1.png" alt="For Love">
+        </div>
+    </section>
+
+    <section class="letters" id="letters">
+        <div class="letters-wrapper">
+            <!-- Paper background as an image -->
+            <img src="Paper 1.jpg" alt="Paper Background">
+
+            <!-- Text overlay -->
+            <div class="letters-text">
+                <h2>Letters</h2>
+                <p>
+                    I have a lot to tell you about my current life and how I'm feeling. 
+                    You already know I like you, but it doesn't imply we should be lovers. 
+                    What I enjoy is your presence and how you helped me through those 
+                    difficult moments. If there is a chance between us, I will not 
+                    pressure you to accept my feelings. We spent most of our school 
+                    days together, so you already know my story—what happened and 
+                    how my past love life went—so there isn't anything else for me to say. <br>
+                    On the other hands, I dun know many things about you that who you like, 
+                    what you doing know, how the life is going, who do you like or love. 
+                    I think that we haven't many conversation between us and less in-touch 
+                    that why I haven't know anything about you. <br>
+                    I'm not sure if you still have feelings for my friend 
+                    (you know who I'm talking about), so I backed off and kept my distance. 
+                    Because we're all single, you can like him back at any time.  I'm not 
+                    sure if you have feelings for him or not, so I don't want to try too 
+                    hard to flirt with you. Another reason is that you have a lot of 
+                    better men around you. They're all better than me, and they're 
+                    still near to you (at least they are in same country with you). 
+                    I'd like to clarify that I've had feelings for you since 2023, 
+                    but they're not because I want to be a lover or take advantage 
+                    of you, but because I'm simply feeling this way for you.
+                    (Arhh I like you, I want to talk to you, I want to bully you, 
+                    and I am happy when I have a conversation to you). <br>
+                    I already know that I have a 0.00% chance of making you love me back, 
+                    so if you accept my feelings for you, please take as much time as 
+                    you need to respond. However, you can decline instantly on 
+                    my Instagram DM by saying, "Sorry, I want to stay with a friendship." 
+                    If not, send me some emoji to indicate that I understand your 
+                    feelings and will take some time to respond. Just follow your heart 
+                    and make your own decisions; I accept and respect whatever 
+                    decision you make. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="collection-container">
+        <h2>Most Of I Like Moments</h2>
+        <div class="gallery-grid">
+            <img src="P1.jpg" alt="Confession Photo 1">
+            <img src="P5.jpg" alt="Confession Photo 2">
+            <img src="P2.jpg" alt="Confession Photo 3">
+            <img src="P8.jpg" alt="Confession Photo 4">
+            <img src="P4.jpg" alt="Confession Photo 5">
+            <img src="P10.jpg" alt="Confession Photo 6">
+            <img src="P3.jpg" alt="Confession Photo 7">
+            <img src="P7.jpg" alt="Confession Photo 8">
+            <img src="P 9.jpg" alt="Confession Photo 9">
+            <img src="P6.jpg" alt="Confession Photo 10">
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <h2>Precious Movements</h2>
+        <div class="video-wrapper" id="video">
+            <iframe 
+                src="VD1.mp4" 
+                title="My Confession Video" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+  <section class="letters-section">
+    <h1>Letters</h1>
+    <p class="subtitle">Categorized letters.</p>
+
+    <!-- Buttons -->
+    <div class="tags">
+      <button class="tag love" onclick="filterLetters('love')">love</button>
+      <button class="tag health" onclick="filterLetters('health')">health</button>
+      <button class="tag career" onclick="filterLetters('career')">career</button>
+      <button class="tag you" onclick="filterLetters('you')">you</button>
+      <button class="tag all" onclick="filterLetters('all')">all</button>
+     <button class="tag thanks" onclick="filterLetters('thanks')">thanks</button>
+    </div>
+
+    <!-- Letters -->
+    <div class="letters-container" id="texts">
+      <div class="letter">
+        <p>Whatever happens, I won't lie to you, and I will keep my word as best as I can. 🫰</p>
+        <div class="letter-tags">
+          <span class="letter-tag love">LOVE</span>
+          <span class="letter-tag you">YOU</span>
+        </div>
+      </div>
+
+      <div class="letter">
+        <p>I'll keep working hard for my dreams, knowing you're cheering for me. You're my biggest motivation.</p>
+        <p>Make sure your dreams come true. Whatever it may be, you can do it—I know you will achieve what you truly want. </p>
+        <div class="letter-tags">
+          <span class="letter-tag career">CAREER</span>
+        </div>
+      </div>
+
+      <div class="letter">
+        <p>Please take care of your health and don't overwork yourself. I want to see you always smiling and strong.</p>
+        <p>Stay true to yourself. Don't change, no matter what others say. Just ignore them and do the things you truly want.</p>
+        <div class="letter-tags">
+          <span class="letter-tag you">YOU</span>
+          <span class="letter-tag health">HEALTH</span>
+        </div>
+      </div>
+
+      <div class="letter">
+        <p>pyaw sayr tyy di htet po ny pin mk annoy phik ny mhr so los ma pyaw dok bue. tgal dok tagl ko pyaw sayar tyy amyrr gyi bl. nrr htg chn yin dok nin arr yin dok pyaw pya pr ml as u like. nrr ma htg chin ll br mha ma phik pr bue. :3 😌</p>
+        <div class="letter-tags">
+          <span class="letter-tag love">LOVE</span>
+        </div>
+      </div>
+        <div class="letter">
+            <p>Phwint pyaw kae dr ko sate ma soe los kyay zuu pr bl. Sakar tate ma pyaw phik dr dok tg pan pr tl cuz i didn't want to annoy you, and I feels like u are not in happy mode when a talk with me in these day. 
+               Whether we talk or not, my words and the feelings I confessed to you haven’t changed. 🙇‍♂️</p>
+            <div class="letter-tags">
+             <span class="letter-tag thanks">Thanks</span>
+            </div>
+        </div>
+        <div class="letter">
+            <p>I spent at least 4 hours completing the website to show you, and I hope you like it and appreciate my hard work. I also have a wound on my hand, and both of my hands hurt. But if you like it, I'm willing to do this.🙂‍↔️</p>
+            <div class="letter-tags">
+                <span class="letter-tag you">You</span>
+            </div>
+        </div>
+    </div>
+  </section>    
+
+    <script src="home.js"></script>
+</body>
+</html>
